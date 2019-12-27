@@ -1,0 +1,21 @@
+
+
+<div class="flex w-2/3 m-auto">
+    <div class="flex-1"> 
+        <% @html.each do |product| %>
+            <p> <%= product[:link] %> </p>
+            <img src=<%= product[:image] %> width="150" />
+            <p> <%= product[:price] %> </p>
+            <a  href=<%= product[:link] %> > visit </a>
+        <% end %>
+    </div>
+    <div class="flex-1">
+        <% @jumia.each do |product| %>
+            <p> <%= product[:link] %> </p>
+            <img src=<%= product[:image] %> width="150" />
+            <p> <%= product[:price] %> </p>
+            <a  href=<%= product[:link] %> > visit </a>
+        <% end %>
+    </div>
+</div>
+
