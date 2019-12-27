@@ -57,7 +57,7 @@ class HomeController < ApplicationController
                 :image => ""
             }
 
-            details[:image] = product.search('img.lazy.image.-loaded').attr('src')
+            details[:image] = product.search('img').attr('data-src')
             details[:name] = product.search('.title .name').inner_text
             details[:price] = product.search('.price-box .price').inner_text
             details[:link] = product.search('.sku.-gallery a').attr('href')
