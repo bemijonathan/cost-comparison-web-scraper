@@ -1,0 +1,1 @@
+source /home/mixed_code/.rvm/scripts/rvm
