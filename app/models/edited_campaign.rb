@@ -1,0 +1,2 @@
+class EditedCampaign < ApplicationRecord
+end

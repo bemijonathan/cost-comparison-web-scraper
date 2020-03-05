@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  template_design: MyText
+  template_parent: MyString
+  settings: MyString
+  user: MyString
+
+two:
+  name: MyString
+  template_design: MyText
+  template_parent: MyString
+  settings: MyString
+  user: MyString

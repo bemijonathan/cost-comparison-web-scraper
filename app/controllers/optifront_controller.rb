@@ -29,11 +29,30 @@ class OptifrontController < ApplicationController
 	end
 
 	def getCampaign
+		@Campaigns = Campaign.all
+
+		@response = []
+
+		@Campaigns.each { |e|
+			@response.push({
+				details: {
+					site: e[:site], 
+					preview: e[:preview], 
+					stats: {
+						clicks: 1055,
+						views: 6309,
+						email: 738
+					}
+				}
+			})
+		}
+		render json: @response
 	end
-  	def deleteCampaign
-  	end
-  	def postCampaigns
-  	end
+	# def deleteCampaign
+		
+	# end
+	# def postCampaigns
+	# end
 
 end
 

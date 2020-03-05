@@ -10,11 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20200305040002) do
+ActiveRecord::Schema.define(version: 20200305082841) do
 
   create_table "campaigns", force: :cascade do |t|
     t.string "preview"
     t.string "site"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "edited_campaigns", force: :cascade do |t|
+    t.string "name"
+    t.text "template_design"
+    t.string "template_parent"
+    t.string "settings"
+    t.string "user"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
