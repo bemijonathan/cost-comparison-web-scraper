@@ -4,4 +4,10 @@ Rails.application.routes.draw do
   get '/term/:term' => "home#term"
   get '/jumia' => "home#jumia"
   get '/konga' => "home#konga"
+  get '/home' => "optifront#home"
+  get '/websites' => "optifront#getwebsite"
+  post '/websites' => "optifront#postwebsite"
+  get '/campaigns' => "optifront#getCampaign"
+  delete '/campaigns' => "optifront#deleteCampaign"
+  post '/campaigns' => "optifront#postCampaigns"
 end
