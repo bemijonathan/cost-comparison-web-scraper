@@ -7,24 +7,24 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-# Website.create([
-# 	{name:"Inception", link:"www.inceptions.com"},
-# 	{name:"Interstellar", link:"www.interstellar.com"},
-# 	{name:"Dunkirk", link:"www.Dunkirk.com"}
-# ])
+Website.create([
+	{name:"Inception", link:"www.inceptions.com"},
+	{name:"Interstellar", link:"www.interstellar.com"},
+	{name:"Dunkirk", link:"www.Dunkirk.com"}
+])
 
-# Campaign.create([
-# 	{
-#       preview: "images/campaign-dummy.png",
-#       # last_edited: "November 15, 2019, 10:11 AM",
-#       site: "PlanetX.com",
-#   	},
-#   	{
-#       preview: "images/campaign-dummy2.png",
-#       # last_edited: "November 15, 2019, 10:11 AM",
-#       site: "PlanetX.com",
-#     }
-# ])
+Campaign.create([
+	{
+      preview: "images/campaign-dummy.png",
+      # last_edited: "November 15, 2019, 10:11 AM",
+      site: "PlanetX.com",
+  	},
+  	{
+      preview: "images/campaign-dummy2.png",
+      # last_edited: "November 15, 2019, 10:11 AM",
+      site: "PlanetX.com",
+    }
+])
 
 Template.create([
     {
