@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get '/websites' => "optifront#getwebsite"
   post '/websites' => "optifront#postwebsite"
   get '/campaigns' => "optifront#getCampaign"
+  get '/campaigns/:name' => "optifront#getSingleCampaign"
   delete '/campaigns/:id' => "optifront#deleteCampaign"
   post '/campaigns' => "optifront#postCampaigns"
   patch '/campaigns/:id' => "optifront#save"
