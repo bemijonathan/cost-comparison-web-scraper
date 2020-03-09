@@ -91,7 +91,7 @@ class OptifrontController < ApplicationController
 
 	def getSingleCampaign
 		b = EditedCampaign.find_by(name: params[:name])
-		render json: {files: b.template_design}
+		render json: {files: b.template_design, id: b.id}
 	end
 
 end
